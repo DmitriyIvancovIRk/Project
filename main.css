@@ -1,0 +1,101 @@
+*{
+margin: 0; 
+box-sizing: border-box;
+}
+header{
+width:100%;
+display: flex;
+justify-content: center;
+}
+section{
+max-width:1100px;
+margin:0 auto;    
+}
+.gallery {
+    place-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    gap: 10px;
+    height: min-content;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    flex: 1 0 0px;
+    gap: 40px;
+    grid-auto-rows: minmax(0px, 1fr);
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, minmax(0px, 1fr));
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    width: 1px;
+}
+
+.item{
+    place-content: center;
+    align-items: center;
+    place-self: start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 30px;
+    height: min-content;
+    overflow: visible;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.grid-title a {
+  color: #1b263c;
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    border-radius: 40px;
+    mix-blend-mode: multiply;
+    height: 202px;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.grid-title{
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+    padding: 0 0 10px;
+    color: #1b263c;
+}
+footer{
+    place-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 15px;
+    height: min-content;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.footerdesign p, .footerspecial p{
+    font-size: 16px;
+    font-weight: normal;
+  }
